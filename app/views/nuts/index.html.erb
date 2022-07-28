@@ -1,0 +1,22 @@
+<h1>Input: </h1>
+<p>Insert data in the text box in the form of D, N, F, C </p>
+<%= form_for(:input, :url => {:action => 'index'}) do |f| %>
+    <%= f.text_area(:text, size: '50x10')  %>
+    <%= submit_tag("Submit") %>
+<% end %>
+
+<h1>Output: </h1>
+<table>
+  <tr>
+    <th>D, N, F, C  </th>
+    <th>Maximum amount of nuts (X)</th>
+  </tr>
+<% if !(@list_x.nil?) %>
+    <% @list_x.each_with_index do |x, index| %>
+        <tr>
+            <td><%= @number_of_lines[index] %></td>
+            <td><%= x %></td>
+        </tr>
+    <% end %>
+<% end %>    
+</table>
