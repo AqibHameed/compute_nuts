@@ -4,9 +4,9 @@ class NutsController < ApplicationController
   end
 
   def maximum_amount_of_nuts
-    #Read the number of lines in the text aread field
+    #Read the number of lines in the text area field
     @number_of_lines = params[:input][:text].split("\r\n").reject(&:empty?)
-    #Conatain the list of max amount of nuts
+    #Contain the list of max amount of nuts
     @list_x = []
     @number_of_lines.each do |line|
         line = line.split(",")
