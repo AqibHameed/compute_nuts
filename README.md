@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After pull the code run the command **bundle install**
+then start the server and run this url in the browser**http://localhost:3000/**.
+After that put the data in the textarea field in the form of D,N,F, C and then click on the submit button.
+Below in the output section you can see the results.
 
-Things you may want to cover:
+* Ruby version: 2.7.2p137
 
-* Ruby version
+* rails version: 6.1.6.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
